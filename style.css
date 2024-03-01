@@ -1,0 +1,69 @@
+body{
+    background-color: orangered;
+    overflow-x: hidden;
+    font-family: 'Verdana', sans-serif;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    margin: 5%;
+}
+
+#container{
+    margin-top: 0%;
+    width: 50vw;
+    height: auto;
+    /*outline:3px solid black;*/
+    margin-left:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.jogo{
+    background-color: antiquewhite;
+    margin-top: 5%;
+    aspect-ratio: 7/2 ;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.append{
+    background-color: antiquewhite;
+    margin-top: -8%;
+    margin-left: 35%;
+    aspect-ratio: 7/2 ;
+    width: 30%;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+.placar-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team1{
+    /*background-color: green;*/
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 10%;
+    margin: 10%;
+}
+.team2{
+    /*background-color: red;*/
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 10%;
+    margin: 10%;
+}
+.placar{
+    margin-top: 10%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
