@@ -1,45 +1,105 @@
 body{
-    background-color: orangered;
+    background-color: #FEBB4D;
     overflow-x: hidden;
     font-family: 'Verdana', sans-serif;
     color: black;
 }
 
+#edit{
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    width: 5%;
+    min-width: 52px;
+    background-color: #4d90fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+#PopUp{
+    position:fixed;
+    aspect-ratio: 1/0.8;
+    width: 60vw;
+    z-index: 1000;
+    top: 4%;
+    left: 20%;
+    background-color: white;
+}*/
+
+svg{
+    width: 80%;
+}
+
 h1{
     text-align: center;
     margin: 5%;
+    user-select: none;
 }
 
-#container{
-    margin-top: 0%;
+#turmas_selector{
+    margin-right: auto;
+    margin-left: auto;
+    /*outline:3px solid #dc3545;*/
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.turma{
+    box-shadow: 3px 0 0 #794150 inset;
+    background-color: #4d90fe;
+    user-select: none;
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-weight: 1000;
+    font-size: larger;
+    display: inline-block;
+    padding: 1vw;
+}
+
+#games_container{
+    margin-top: 5%;
     width: 50vw;
     height: auto;
     /*outline:3px solid black;*/
     margin-left:25%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: flex-start;
     align-items:center;
 }
 
 .jogo{
-    background-color: antiquewhite;
-    margin-top: 5%;
-    aspect-ratio: 7/2 ;
-    width: 50%;
+    background-color: #faebd7;
+    margin-top: 10%;
+    height: fit-content;
+    min-width: 200px;
+    width: 25vw;
     border-radius: 5px;
 }
 
 .append{
     background-color: antiquewhite;
     margin-top: -8%;
-    margin-left: 35%;
+    margin-left: auto;
+    margin-right: auto;
     aspect-ratio: 7/2 ;
-    width: 30%;
+    min-width: 100px;
+    width: 50%;
     border-radius: 3px;
     text-align: center;
     font-weight: bolder;
     font-size: 2vw;
+}
+
+.date{
+    font-size: 80%;
+    min-width: 35px;
+    min-height:20px;
+    
 }
 
 .placar-container{
@@ -51,19 +111,36 @@ h1{
     /*background-color: green;*/
     border-radius: 50%;
     aspect-ratio: 1/1;
-    width: 10%;
+    width: 5vw;
     margin: 10%;
+    min-width: 35px;
 }
 .team2{
     /*background-color: red;*/
     border-radius: 50%;
     aspect-ratio: 1/1;
-    width: 10%;
+    width: 5vw;
     margin: 10%;
+    min-width: 35px;
 }
 .placar{
     margin-top: 10%;
     text-align: center;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 3vw;
+}
+
+
+#popup{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-radius: 5px;
+    width: 60vw;
+    height: fit-content;
+    z-index: 1000;
+    top: 4%;
+    left: 20%;
+    background-color: white;
 }
